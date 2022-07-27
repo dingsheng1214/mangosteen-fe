@@ -6,13 +6,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     vue(),
-<<<<<<< HEAD
-    vueJsx()
-=======
     vueJsx({
       transformOn: true,
       mergeProps: true,
     })
->>>>>>> ccae82f (feat: vite + tsx)
   ]
 })

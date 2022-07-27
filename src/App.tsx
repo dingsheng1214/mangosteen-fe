@@ -1,18 +1,22 @@
-import { defineComponent, ref } from "vue";
+import { defineComponent } from 'vue'
 
 const App = defineComponent({
   setup() {
-    const count = ref(0);
-    const increment = () => {
-      count.value++;
-    }
-
     return () => (
       <div>
-        <p>{count.value}</p>
-        <button onClick={increment}>+1</button>
+        <header>
+          <ul>
+            <li>
+              <router-link to='/'>Foo</router-link>
+            </li>
+            <li>
+              <router-link to='/bar'>Bar</router-link>
+            </li>
+          </ul>
+        </header>
+        <router-view />
       </div>
-    );
-  }
+    )
+  },
 })
 export default App
