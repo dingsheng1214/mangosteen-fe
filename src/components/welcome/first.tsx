@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue';
 import { RouterLink } from 'vue-router';
 import card_logo from '../../assets/icons/welcome_1.svg';
-import style from './First.module.scss';
+import style from './common.module.scss';
 
 const First = defineComponent({
   setup(props, context) {
@@ -14,7 +14,7 @@ const First = defineComponent({
         <div class={style.actions}>
           <RouterLink class={style.skip} to="/start">跳过</RouterLink>
           <RouterLink to="/welcome/2">下一页</RouterLink>
-          <RouterLink class={style.skip} to="/start">跳过</RouterLink>
+          <RouterLink to="/start">跳过</RouterLink>
         </div>
       </div>
     );

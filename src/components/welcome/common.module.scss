@@ -10,7 +10,7 @@
     align-items: center;
     background-color: var(--welcome-card-bg);
     border-radius: 8px;
-    margin: 32px 16px 0 16px;
+    margin: 16px;
 
     >img {
       width: 128px;
@@ -23,16 +23,20 @@
   }
 
   >.actions {
+    width: 100%;
+    height: var(--welcome-actions-height);
+    background: var(--welcome-bg-liner-end);
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     color: var(--welcome-btn-color);
     font-size: 32px;
     font-weight: bold;
-    margin: 16px;
+    padding: 0 16px;
     .skip {
-      &:first-child {
-        visibility: hidden;
-      }
+      visibility: hidden;
     }
   }
 }
