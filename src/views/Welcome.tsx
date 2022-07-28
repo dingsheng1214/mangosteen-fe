@@ -11,7 +11,7 @@ const Welcome = defineComponent({
           <img src={logo} alt="logo"/>
           <h1>山竹记账</h1>
         </header>
-        <main>
+        <main class={style.main}>
           <RouterView />
         </main>
       </div>
