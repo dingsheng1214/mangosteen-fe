@@ -13,7 +13,7 @@ const First = defineComponent({
         </div>
         <div class={style.actions}>
           <RouterLink class={style.skip} to="/start">跳过</RouterLink>
-          <RouterLink class={style.next} to="/welcome/2">下一页</RouterLink>
+          <RouterLink to="/welcome/2">下一页</RouterLink>
           <RouterLink class={style.skip} to="/start">跳过</RouterLink>
         </div>
       </div>
